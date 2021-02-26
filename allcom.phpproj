@@ -2,11 +2,26 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Name>allcom</Name>
-    <ProjectGuid>{3ca23726-471b-4ced-957f-c4ea10722386}</ProjectGuid>
-    <RootNamespace>
-    </RootNamespace>
+    <ProjectGuid>{1040964f-3254-4afb-82db-5a09f7f017ff}</ProjectGuid>
+    <RootNamespace>allcom</RootNamespace>
     <OutputType>Library</OutputType>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>8.0.1.0</RuntimeVersion>
+    <WebRoot>/allcom</WebRoot>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>Custom</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <CustomServerUrl>http://allcom/</CustomServerUrl>
+    <CustomXdebugPort>9000</CustomXdebugPort>
+    <PublishEvent>AfterSave</PublishEvent>
+    <DebugMappingMethod>Manual</DebugMappingMethod>
+    <DBGpProxyEnabled>false</DBGpProxyEnabled>
+    <DBGpProxyPort>9001</DBGpProxyPort>
+    <PublishBeforeDebugProfile>Testing allcom</PublishBeforeDebugProfile>
+    <DebugPathMapping>black_willow;C:\Repositories\black_willow_framework</DebugPathMapping>
+    <IncludePath>.;C:\Repositories\black_willow_framework;C:\Repositories\cdecom;C:\Repositories\rgcafe;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -15,6 +30,125 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="al_black_boxes\bwt_banner\al_bwt_willow_banner_4.6_x1250y150.png" />
+    <Compile Include="al_black_boxes\bwt_banner\al_bwt_willow_banner_4.6_x2500y300.png" />
+    <Compile Include="al_black_boxes\bwt_banner\al_bwt_willow_banner_4.6_x5000y600.png" />
+    <Compile Include="al_black_boxes\bwt_banner\al_bwt_willow_banner_4.6_x750y90.png" />
+    <Compile Include="al_black_boxes\bwt_banner\AL_BW_Banner.php" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_builders_hub.php" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_builders_hub.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_builders_hub_meta.json" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_builders_hub_meta.txt" />
+    <Compile Include="al_black_boxes\bwt_hub\BWT_Hub.php" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hubs.css" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_1.1.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_1.1_x1500y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_background_group_1.1_x1500y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_background_group_1.2.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_ornament_group_1.4_x1000y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_ray_group_1.3_x1500y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_ray_group_1.4_x2000y1000 copy.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_ray_group_1.4_x2000y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_ring_group_1.1_x1000y1000.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_hub_shapes.svg" />
+    <Compile Include="al_black_boxes\bwt_hub\bwt_researchers_hub_meta.json" />
+    <Compile Include="al_black_boxes\bwt_logo\AL_BW_Logo.php" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_4.3_x1000y600.jpg" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_4.3_x1500y900.jpg" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_4.3_x2000y1200.jpg" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_4.3_x500y300.jpg" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x1000y625.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x2000y1250.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x200y125.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x438y275.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x500y312.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.4_x875y550.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.5_x1000y625.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.5_x2000y1250.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.5_x200y125.png" />
+    <Compile Include="al_black_boxes\bwt_logo\al__bwt_willow_logo_4.5_x500y312.png" />
+    <Compile Include="al_black_boxes\bwt_splash\AL_BW_Splash.php" />
+    <Compile Include="al_black_boxes\bwt_splash\al__bwt_willow_4.3_x1000y600.jpg" />
+    <Compile Include="al_black_boxes\bwt_splash\al__bwt_willow_4.3_x1500y900.jpg" />
+    <Compile Include="al_black_boxes\bwt_splash\al__bwt_willow_4.3_x2000y1200.jpg" />
+    <Compile Include="al_black_boxes\bwt_splash\al__bwt_willow_4.3_x500y300.jpg" />
+    <Compile Include="al_black_boxes\Active components which live in a single folder, such as maps or widgets go here" />
+    <Compile Include="al_components\Active component files, such as sidebars or footers, etc go here" />
+    <Compile Include="al_components\all_left_sidebar_nav (2021_02_14 18_57_38 UTC).php" />
+    <Compile Include="al_containers\AL_Aside_Tag.php" />
+    <Compile Include="al_containers\AL_Body_Tag.php" />
+    <Compile Include="al_containers\AL_Div_Tag.php" />
+    <Compile Include="al_containers\AL_Footer_Tag.php" />
+    <Compile Include="al_containers\AL_Header_Tag.php" />
+    <Compile Include="al_containers\AL_Head_Tag.php" />
+    <Compile Include="al_containers\AL_HTML_Tag.php" />
+    <Compile Include="al_containers\AL_List_Tag.php" />
+    <Compile Include="al_containers\AL_Main_Tag.php" />
+    <Compile Include="al_containers\AL_Menu_Tag.php" />
+    <Compile Include="al_containers\AL_Nav_Tag.php" />
+    <Compile Include="al_containers\AL_Section_Tag.php" />
+    <Compile Include="al_containers\Containers are HTML tags used for layout or framework, extending the BW container classes" />
+    <Compile Include="al_content\Active files such as articles, blog pages, lists, and menus go here" />
+    <Compile Include="al_css\Active css goes here - other languages should have their own folders" />
+    <Compile Include="al_css\al_master.css" />
+    <Compile Include="al_data\Database connections, text sources, spreadsheets, or setup files such as manifests, go here - no exposed codepages" />
+    <Compile Include="al_js\Active JavaScript and libraries go here - other languages should have their own folders" />
+    <Compile Include="al_js\al_onload.js" />
+    <Compile Include="al_json\al_load_order.json" />
+    <Compile Include="al_json\Setup, data, and parameter JSON files go here - XML should have its own folder" />
+    <Compile Include="al_static_pages\al_about_me.php" />
+    <Compile Include="al_static_pages\al_contact_me.php" />
+    <Compile Include="al_static_pages\al_copyright.php" />
+    <Compile Include="al_static_pages\al_meta.php" />
+    <Compile Include="al_static_pages\al_smallprint.php" />
+    <Compile Include="al_static_pages\Pages which don't change, such as copyright, contacts, or smallprint, and which aren't sourced from a database, go here" />
+    <Compile Include="al_svg\SVG is a vector-image tag-based language for making scalable dynamic artwork - SVG codepages and black boxes go here" />
+    <Compile Include="_notes\dwsync.xml" />
+    <Compile Include="_obsolete\Inactive files kept as backups go here...no exposed pages" />
+    <Compile Include="_resources\Inactive files such as image originals, source code, references, etc go here" />
+    <Compile Include="_testbench\This folder is where you make sure things work before you publish them...no exposed files" />
+    <Compile Include=".gitattributes" />
+    <Compile Include=".gitignore" />
+    <Compile Include="allcom.conf" />
+    <Compile Include="allcom_index.php" />
+    <Compile Include="Empty BW site definition.ste" />
+    <Compile Include="favicon.ico" />
+    <Compile Include="index.php" />
+    <Compile Include="LICENSE" />
+    <Compile Include="php_info.php" />
+    <Compile Include="README.md" />
+    <Compile Include="xmlrpc.xml" />
+    <Compile Include="_index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="al_black_boxes\bwt_banner" />
+    <Folder Include="al_black_boxes\bwt_hub" />
+    <Folder Include="al_black_boxes\bwt_logo" />
+    <Folder Include="al_black_boxes\bwt_splash" />
+    <Folder Include="al_black_boxes" />
+    <Folder Include="al_components" />
+    <Folder Include="al_containers" />
+    <Folder Include="al_content" />
+    <Folder Include="al_css" />
+    <Folder Include="al_data" />
+    <Folder Include="al_js" />
+    <Folder Include="al_json" />
+    <Folder Include="al_static_pages" />
+    <Folder Include="al_svg" />
     <Folder Include="Properties\" />
+    <Folder Include="_notes" />
+    <Folder Include="_obsolete" />
+    <Folder Include="_resources" />
+    <Folder Include="_testbench" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="al_json\al_constants.json" />
+    <Content Include="al_json\al_containers_defaults.json" />
+    <Content Include="al_json\al_content_map.json" />
+    <Content Include="al_json\al_errex.json" />
+    <Content Include="al_json\al_framework_defaults.json" />
+    <Content Include="al_json\al_init.json" />
+    <Content Include="al_json\al_meta.json" />
   </ItemGroup>
 </Project>
