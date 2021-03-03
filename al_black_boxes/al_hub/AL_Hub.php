@@ -2,7 +2,7 @@
 
 namespace black_willow\bbox;
 
-class BW_Hub extends \black_willow\bw_system\BW_Black_Box {
+class BW_Hub extends \black_willow\bw_nodes\BW_Black_Box {
 
      private $my_svg = "";
 	private $my_gateways;

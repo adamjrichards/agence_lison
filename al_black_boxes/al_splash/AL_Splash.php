@@ -1,8 +1,9 @@
 <?php
 
-namespace black_willow\bw_black_boxes\bw_splash;
+namespace allcom\al_black_boxes\al_splash;
+use black_willow;
 
-class BW_Splash extends \black_willow\bw_system\BW_Black_Box {
+class AL_Splash extends \black_willow\bw_nodes\BW_Black_Box {
 
 	function __construct( $the_params_map ) {
 		parent::__construct( $the_params_map );

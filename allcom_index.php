@@ -1,6 +1,7 @@
 <?php
 
 namespace allcom;
+use black_willow;
 
 	/****************************************************************
 
@@ -14,10 +15,9 @@ namespace allcom;
 	Content Copyright Agence Lison Lescarbeau, 2021.
 	Montreal, Québec.  It's cold there, I love it, I visit when it isn't.
 	******************************************************************/
-\error_reporting( E_ALL );
-//\phpinfo();
 
-\set_include_path( ".;C:/Repositories/black_willow" );
+\error_reporting( E_ALL );
+\set_include_path( ".;C:/Repositories/black_willow;C:\Repositories\rgcafe" );
 
 include "Black_Willow.php";
 
