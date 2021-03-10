@@ -1,6 +1,6 @@
 <?php
 
-namespace raingarden\rg_static_pages;
+namespace allcom\al_static_pages;
 
 $the_html = "
 	##p>##strong>Copyright:##/strong> All rights belong to Adam J. Richards, of St. Catharines, Ontario, 1979 to 2018.##/p>

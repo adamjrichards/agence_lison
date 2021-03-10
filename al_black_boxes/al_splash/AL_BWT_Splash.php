@@ -18,7 +18,6 @@ class AL_BWT_Splash extends \black_willow\bw_black_boxes\bw_splash\BW_Splash {
 				}
 			}
 		}*/
-		say( parent );
           $this->my_node_opener = "\n\t##{} id='{$this->get_my_id()}_wrapper' class='{$this->get_my_className()} wrapper appear' {$this->get_my_trigger()} {$this->get_my_other_attributes()}>\n";
 
           $this->my_innerHTML = "\n##img id='{$this->get_my_id()}' class='{$this->get_my_className()}' name='{$this->get_my_name()}' src='bw_black_boxes/BW_Splash/{$this->get_my_src()}' {$this->get_my_trigger()} {$this->get_my_other_attributes()}>\n";

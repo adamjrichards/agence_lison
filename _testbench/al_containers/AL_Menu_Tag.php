@@ -2,7 +2,7 @@
 
 namespace black_willow\bw_tags;
 
-class BW_Menu_Tag extends \black_willow\bw_system\BW_DOM_Node {
+class AL_Menu_Tag extends \black_willow\bw_nodes\bw_primary_nodes\BW_DOM_Node {
 
      protected $my_map;
      protected $my_source;

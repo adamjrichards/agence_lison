@@ -1,9 +1,10 @@
 <?php
 
-namespace black_willow\bw_black_boxes\bw_logo;
+namespace allcom\al_black_boxes\al_logo;
+use \black_willow\bw_black_boxes\bw_logo;
 
-class BW_Logo extends \black_willow\bw_nodes\BW_Black_Box {
-
+class AL_BWT_Logo extends \black_willow\bw_black_boxes\bw_logo\BW_Logo {
+	
 	public $my_target; // ...the image set
 	public $my_owner; // ...as in a company or service, etc.
 

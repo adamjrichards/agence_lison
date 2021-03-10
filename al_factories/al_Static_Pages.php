@@ -21,22 +21,12 @@ abstract class al_Static_Pages {
 	}
 
 	public static function get_me_a_new_al_copyright( $with_this_handle, $with_this_value ) {
-		$GLOBALS[ $with_this_handle ] = new bstat\BW_Copyright( $with_this_value );
+		$GLOBALS[ $with_this_handle ] = new bstat\BW_Copyright ( $with_this_value );
 		return $GLOBALS[ $with_this_handle ];
 	}
 
 	public static function get_me_a_new_al_meta( $with_this_handle, $with_this_value ) {
           $GLOBALS[ $with_this_handle ] = new bstat\BW_Meta( $with_this_value );
-		return $GLOBALS[ $with_this_handle ];
-	}
-
-	public static function get_me_a_new_al_search( $with_this_handle, $with_this_value ) {
-		$GLOBALS[ $with_this_handle ] = new bstat\BW_Search( $with_this_value );
-		return $GLOBALS[ $with_this_handle ];
-	}
-
-	public static function get_me_a_new_al_site_map[( $with_this_handle, $with_this_value ) {
-		$GLOBALS[ $with_this_handle ] = new bstat\BW_Site_Map( $with_this_value );
 		return $GLOBALS[ $with_this_handle ];
 	}
 

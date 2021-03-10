@@ -1,8 +1,9 @@
 <?php
 
-namespace black_willow\bw_containers;
+namespace allcom\al_containers;
+use black_willow;
 
-class BW_HTML_Tag extends \black_willow\bw_system\BW_DOM_Node {
+class AL_HTML_Tag extends \black_willow\bw_containers\BW_HTML_Tag {
 
 	function __construct( $the_params_map ) {
 

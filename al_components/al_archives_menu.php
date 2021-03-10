@@ -1,4 +1,8 @@
-##!------------------------------ rg_archives_menu.php starts here. ---------------------------------->
+<?php
+
+namespace allcom\al_components;
+
+$the_html = "##!------------------------------ rg_archives_menu.php starts here. ---------------------------------->
 
 		##menu class='navmenu' id='the_archives_navmenu'>
 			##ul class='navlist' id='the_archives_navlist'>
@@ -47,4 +51,4 @@
 				##/li>
 			##/ul>
 		##/menu>
-##!------------------------------ rg_archives_menu.php ends here. ---------------------------------->
+##!------------------------------ rg_archives_menu.php ends here. ---------------------------------->";

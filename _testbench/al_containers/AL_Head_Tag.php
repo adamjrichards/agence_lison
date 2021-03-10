@@ -1,8 +1,8 @@
 <?php
 
-namespace black_willow\bw_containers;
+use black_willow\bw_containers;
 
-class BW_Head_Tag extends \black_willow\bw_system\BW_DOM_Node {
+class AL_Head_Tag extends \black_willow\bw_nodes\bw_primary_nodes\BW_DOM_Node {
 
      private $my_script_groups;
      private $my_link_groups;

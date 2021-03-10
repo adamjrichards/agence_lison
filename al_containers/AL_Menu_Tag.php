@@ -1,8 +1,9 @@
 <?php
 
-namespace black_willow\bw_tags;
+namespace allcom\al_containers;
+use black_willow;
 
-class BW_Menu_Tag extends \black_willow\bw_system\BW_DOM_Node {
+class AL_Menu_Tag extends \black_willow\bw_containers\BW_Menu_Tag {
 
      protected $my_map;
      protected $my_source;

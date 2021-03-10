@@ -1,6 +1,6 @@
 <?php
 
-namespace raingarden\rg_components;
+namespace allcom\al_components;
 
 $the_html = "##!--  sidebar_right.php begins here. -->
 

@@ -1,30 +1,51 @@
 <?php
 
 namespace allcom;
+use black_willow;
 
-set_include_path( "." );
-include "al_containers/AL_Head_Tag.php";
-include "al_containers/AL_Body_Tag.php";
-include "al_containers/AL_Header_Tag.php";
-include "al_containers/AL_Aside_Tag.php";
-include "al_containers/AL_main_Tag.php";
-include "al_containers/AL_footer_Tag.php";
+	/****************************************************************
 
-$the_html_code = $the_head_opener;
-$the_html_code .= $the_head_content;
-$the_html_code .= $the_head_closer;
-$the_html_code .= $the_body_opener;
-$the_html_code .= $the_header_opener;
-$the_html_code .= $the_header_content;
-$the_html_code .= $the_header_closer;
-$the_html_code .= $the_left_sidebar_opener;
-$the_html_code .= $the_left_sidebar_content;
-$the_html_code .= $the_left_sidebar_closer;
-$the_html_code .= $the_main_opener;
-$the_html_code .= $the_main_content;
-$the_html_code .= $the_main_closer;
-//$the_html_code .= $the_footer_opener;
-//$the_html_code .= $the_footer_closer;
-$the_html_code .= $the_body_closer;
+	Agence Lison Lescarbeau 1.1
 
-echo $the_html_code;
+	Code and all stuff found in this site are mine or Lison's unless I say otherwise,
+	which I normally do if I'm using another someone's material.
+
+	Code Copyright Adam Joel Richards, Raingarden Cafe, 2021.
+	St. Catharines, Ontario.  It's nice here, I love it.
+	Content Copyright Agence Lison Lescarbeau, 2021.
+	Montreal, Québec.  It's cold there, I love it, I visit when it isn't.
+	******************************************************************/
+\set_include_path(".;C:\Repositories\black_willow\;");
+include "Black_Willow.php";
+include "ALLCom.php";
+$the_handle = $_SERVER[ "MY_PROJECT_HANDLE" ];
+
+$GLOBALS[ $the_handle ] = new ALLCom( $_SERVER[ "MY_PROJECT_INIT_FILE" ] );
+
+// If there is any other ALLCom preloading to do, put the file in the rg_init folder.
+// Only functions and data are allowed, one function (php) or data-source (json) per file.
+$the_folder = $_SERVER[ "MY_PROJECT_INIT" ];
+$GLOBALS[ "the_json_preloads" ] = new \Ds\Map();
+if ( \is_dir( $the_folder )) {
+	if ( $the_init_folder = \opendir( $the_folder )) {
+		while ( ( $another_file = readdir( $the_init_folder ) ) !== false) {
+			$the_extension = \pathinfo( $another_file )[ "extension" ];
+			if ( \is_file( "$the_folder\\$another_file" ) ) {
+				if ( $the_extension !== "php" AND $the_extension !== "json" ) {
+					throw new black_willow\bw_errex\BW_Framework_Loading_Error( "This_data_file_is_unloadable: $the_folder\\$another_file" );
+				} else {
+					if( $the_extension === "json" ) {
+						$the_json = \json_decode( \file_get_contents( "$the_folder\\$another_file" ) );
+						$GLOBALS[ "the_json_preloads" ]->put( "$the_folder\\$another_file", $the_json );
+					} else {
+						include( "$the_folder\\$another_file" );
+					}
+				}
+			}
+		}
+		\closedir( $the_init_folder );
+	}
+}
+$the_kickstart = $GLOBALS[ $the_handle ]->kickstart_it( $the_handle );
+echo $the_kickstart;
+/*/*///

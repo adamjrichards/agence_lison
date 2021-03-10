@@ -1,8 +1,9 @@
 <?php
 
-namespace black_willow\bbox;
+namespace allcom\al_black_boxes\al_hub;
+use black_willow;
 
-class BW_Hub extends \black_willow\bw_nodes\BW_Black_Box {
+class AL_Hub extends \black_willow\bw_nodes\BW_Black_Box {
 
      private $my_svg = "";
 	private $my_gateways;
@@ -23,6 +24,7 @@ class BW_Hub extends \black_willow\bw_nodes\BW_Black_Box {
                $the_reader = new \black_willow\bw_system\BW_JSON_Reader( $this->get_my_meta(), $this->get_my_handle() );
                $the_json = $the_reader->get_my_json();
           }
+          \vump( "json", $the_json );
 		/*
           $the_links = $the_json->{$this->get_my_handle()};
           $GLOBALS[ "MY_TOOLBOX" ]->get( "BW_Existifier" )->existify_the_class( "\\black_willow\bw_system\\BW_Toy" );

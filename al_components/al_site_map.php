@@ -2,7 +2,7 @@
 
 namespace allcom\al_components;
 
-$the_html = "##!-- rg_sidebar_left.php begins here. -->
+$the_html = "##!-- al_sidebar_left.php begins here. -->
 
 ##div class='left_sidebar streetlight' id='the_streetlight_wrapper'>
 

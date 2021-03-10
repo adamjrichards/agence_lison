@@ -10,7 +10,7 @@
     <Runtime>PHP</Runtime>
     <RuntimeVersion>8.0.1.0</RuntimeVersion>
     <EnvName>Custom</EnvName>
-    <PHPDevHostName>lotus</PHPDevHostName>
+    <PHPDevHostName>allcom</PHPDevHostName>
     <PHPDevAutoPort>true</PHPDevAutoPort>
     <CustomServerUrl>http://allcom</CustomServerUrl>
     <CustomXdebugPort>9000</CustomXdebugPort>
@@ -19,7 +19,7 @@
     <DBGpProxyEnabled>false</DBGpProxyEnabled>
     <DBGpProxyPort>9001</DBGpProxyPort>
     <WebRoot>C:\Repositories\allcom</WebRoot>
-    <IncludePath>.;C:\Repositories\allcom;C:\Repositories\black_willow;</IncludePath>
+    <IncludePath>C:\Repositories\allcom\;C:\Repositories\black_willow\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -28,6 +28,8 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ALLCom.php" />
+    <Compile Include="al_black_boxes\al_banner\AL_Banner.php" />
     <Compile Include="al_black_boxes\al_banner\AL_BWT_Banner.php" />
     <Compile Include="al_black_boxes\al_banner\al_bwt_willow_banner_4.6_x1250y150.png" />
     <Compile Include="al_black_boxes\al_banner\al_bwt_willow_banner_4.6_x2500y300.png" />
@@ -50,6 +52,7 @@
     <Compile Include="al_black_boxes\al_hub\bwt_hub_ring_group_1.1_x1000y1000.svg" />
     <Compile Include="al_black_boxes\al_hub\bwt_hub_shapes.svg" />
     <Compile Include="al_black_boxes\al_hub\bwt_researchers_hub_meta.json" />
+    <Compile Include="al_black_boxes\al_logo\AL_Logo.php" />
     <Compile Include="al_black_boxes\al_logo\al_bwt_willow_4.3_x1000y600.jpg" />
     <Compile Include="al_black_boxes\al_logo\al_bwt_willow_4.3_x1500y900.jpg" />
     <Compile Include="al_black_boxes\al_logo\al_bwt_willow_4.3_x2000y1200.jpg" />
@@ -71,13 +74,12 @@
     <Compile Include="al_black_boxes\al_splash\al_bwt_willow_4.3_x2000y1200.jpg" />
     <Compile Include="al_black_boxes\al_splash\al_bwt_willow_4.3_x500y300.jpg" />
     <Compile Include="al_black_boxes\al_splash\AL_BWT_Splash.php" />
-    <Compile Include="al_black_boxes\Active components which live in a single folder, such as maps or widgets go here" />
     <Compile Include="al_black_boxes\al_splash\AL_Splash.php" />
-    <Compile Include="al_components\Active component files, such as sidebars or footers, etc go here" />
     <Compile Include="al_components\al_archives_menu.php" />
     <Compile Include="al_components\al_ornament.php" />
     <Compile Include="al_components\al_sidebar_left.php" />
     <Compile Include="al_components\al_sidebar_right.php" />
+    <Compile Include="al_components\al_site_map.php" />
     <Compile Include="al_components\al_window_nav_buttons.php" />
     <Compile Include="al_containers\AL_Aside_Tag.php" />
     <Compile Include="al_containers\AL_Body_Tag.php" />
@@ -90,9 +92,9 @@
     <Compile Include="al_containers\AL_Main_Tag.php" />
     <Compile Include="al_containers\AL_Menu_Tag.php" />
     <Compile Include="al_containers\AL_Nav_Tag.php" />
+    <Compile Include="al_containers\AL_Ordered_List_Tag.php" />
     <Compile Include="al_containers\AL_Section_Tag.php" />
-    <Compile Include="al_containers\Containers are HTML tags used for layout or framework, extending the BW container classes" />
-    <Compile Include="al_content\Active files such as articles, blog pages, lists, and menus go here" />
+    <Compile Include="al_containers\AL_Unordered_List_Tag.php" />
     <Compile Include="al_css\al_archives.css" />
     <Compile Include="al_css\al_archives_menu.css" />
     <Compile Include="al_css\al_blog_excerpts.css" />
@@ -117,12 +119,10 @@
     <Compile Include="al_css\al_taxonomy.css" />
     <Compile Include="al_css\al_test_page.css" />
     <Compile Include="al_css\al_widgets.css" />
-    <Compile Include="al_data\Database connections, text sources, spreadsheets, or setup files such as manifests, go here - no exposed codepages" />
     <Compile Include="al_factories\al_Black_Boxes.php" />
     <Compile Include="al_factories\al_Components.php" />
     <Compile Include="al_factories\al_Containers.php" />
     <Compile Include="al_factories\al_Static_Pages.php" />
-    <Compile Include="al_js\Active JavaScript and libraries go here - other languages should have their own folders" />
     <Compile Include="al_js\al_onload.js" />
     <Compile Include="al_json\al_listeners\al_archives_navlist_listeners.json" />
     <Compile Include="al_json\al_black_boxes_defaults.json" />
@@ -142,21 +142,15 @@
     <Compile Include="al_json\al_ornaments_defaults.json" />
     <Compile Include="al_json\al_static_pages_defaults.json" />
     <Compile Include="al_json\rg_black_boxes_defaults.json" />
-    <Compile Include="al_json\Setup, data, and parameter JSON files go here - XML should have its own folder" />
     <Compile Include="al_static_pages\al_about_me.php" />
     <Compile Include="al_static_pages\al_contact_me.php" />
     <Compile Include="al_static_pages\al_copyright.php" />
     <Compile Include="al_static_pages\al_meta.php" />
     <Compile Include="al_static_pages\al_search.php" />
-    <Compile Include="al_static_pages\al_site_map.php" />
     <Compile Include="al_static_pages\al_smallprint.php" />
-    <Compile Include="al_static_pages\Pages which don't change, such as copyright, contacts, or smallprint, and which aren't sourced from a database, go here" />
-    <Compile Include="al_svg\SVG is a vector-image tag-based language for making scalable dynamic artwork - SVG codepages and black boxes go here" />
     <Compile Include="allcom_index.php" />
     <Compile Include="favicon.ico" />
     <Compile Include="index.php" />
-    <Compile Include="php_info.php" />
-    <Compile Include="_index.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="al_black_boxes\al_banner" />
@@ -175,6 +169,7 @@
     <Folder Include="al_json" />
     <Folder Include="al_static_pages" />
     <Folder Include="al_svg" />
+    <Folder Include="al_errex\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>

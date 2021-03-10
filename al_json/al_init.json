@@ -1,3 +1,42 @@
 {
-  "Additional allcom initializers are listed here": "and this is the URI for the codepage."
+  "Additional allcom initializers are listed here": "and this is the URI for the codepage.",
+  "BWROOT": "${DOCROOT}/black_willow",
+  "BW meta constants": {
+    "MY_BW_FRIENDLY_NAME": "Black Willow",
+    "MY_BW_HANDLE": "MY_BLACK_WILLOW",
+    "MY_BW_NAMESPACE": "black_willow",
+    "MY_BW_PREFIX": "bw",
+    "MY_BW_OBJECT_PREFIX": "BW",
+    "MY_BW_PATH": "${BWROOT}",
+    "MY_BW_DEFAULT_ERROR_HANDLER": "${BWROOT}/bw_errex/"
+  },
+  "BW startup folder constants": {
+    "MY_BW_FOLDER": "black_willow",
+    "MY_BW_BLACK_BOXES": "${BWROOT}/bw_black_boxes",
+    "MY_BW_COMPONENTS": "${BWROOT}/bw_components",
+    "MY_BW_CONTAINERS": "${BWROOT}/bw_containers",
+    "MY_BW_CORE": "${BWROOT}/bw_core",
+    "MY_BW_CSS": "${BWROOT}/bw_css",
+    "MY_BW_DATA": "${BWROOT}/bw_data",
+    "MY_BW_ERREX": "${BWROOT}/bw_errex",
+    "MY_BW_FACTORIES": "${BWROOT}/bw_factories",
+    "MY_BW_FRAMEWORK": "${BWROOT}/bw_framework",
+    "MY_BW_FUNCTIONS": "${BWROOT}/bw_functions",
+    "MY_BW_JS": "${BWROOT}/bw_js",
+    "MY_BW_JSON": "${BWROOT}/bw_json",
+    "MY_BW_MAPS": "${BWROOT}/bw_maps",
+    "MY_BW_NODES": "${BWROOT}/bw_nodes",
+    "MY_BW_STATIC_PAGES": "${BWROOT}/bw_static_pages",
+    "MY_BW_SYSTEM": "${BWROOT}/bw_system",
+    "MY_BW_TOOLBOX": "${BWROOT}/bw_toolbox",
+    "MY_BW_TOYBOX": "${BWROOT}/bw_toybox"
+  },
+  "BW startup file constants": {
+    "MY_BW_INIT_FILE": "${BWROOT}/bw_json/bw_init.json",
+    "MY_BW_META_FILE": "${BWROOT}/bw_json/bw_meta.json",
+    "MY_BW_ERREX_FILE": "${BWROOT}/bw_json/bw_errex.json",
+    "MY_BW_CONSTANTS_FILE": "${BWROOT}/bw_json/bw_constants.json",
+    "MY_BW_NODES_DEFAULTS_FILE": "${BWROOT}/bw_json/bw_node_defaults.json",
+    "MY_BW_FRAMEWORK_DEFAULTS_FILE": "${BWROOT}/bw_json/bw_framework_defaults.json"
+  }
 }

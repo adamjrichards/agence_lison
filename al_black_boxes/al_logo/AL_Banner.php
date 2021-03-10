@@ -1,9 +1,9 @@
 <?php
 
 namespace allcom\al_black_boxes\al_banner;
-use black_willow\bw_black_boxes\bw_banner;
+use black_willow;
 
-class AL_BWT_Banner extends BWT_Banner {
+class AL_Banner extends \black_willow\bw_nodes\BW_Black_Box {
 
 	public $my_pictures;
 	public $my_background;
