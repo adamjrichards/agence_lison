@@ -1,7 +1,6 @@
 <?php
 
 namespace allcom\al_black_boxes\al_logo;
-use \black_willow\bw_black_boxes\bw_logo;
 
 class AL_BWT_Logo extends \black_willow\bw_black_boxes\bw_logo\BW_Logo {
 	
